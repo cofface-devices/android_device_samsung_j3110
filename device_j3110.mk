@@ -14,6 +14,10 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+# Screen density
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
